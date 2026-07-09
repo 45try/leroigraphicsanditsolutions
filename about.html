@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Le Roi Graphics & IT Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">
+          <img src="fgtg.jpg" alt="Le Roi Graphics & IT Solutions logo" />
+          <span>
+            <strong>Le Roi</strong>
+            <small>Graphics & IT Solutions</small>
+          </span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const mainNav = document.getElementById('mainNav');
+      hamburger.addEventListener('click', () => {
+        mainNav.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+      document.querySelectorAll('.main-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          mainNav.classList.remove('active');
+          hamburger.classList.remove('active');
+        });
+      });
+    </script>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">About Le Roi</p>
+          <h1>Professional solutions built around your brand.</h1>
+          <p>
+            Based in Kampala, Uganda, Le Roi Graphics & IT Solutions helps businesses and organizations present themselves with confidence through thoughtful design, reliable printing, and cohesive branding.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container two-column">
+          <div>
+            <h2>Our focus</h2>
+            <p>
+              We work closely with clients to understand their goals, audience, and growth plans. Every project is approached with care, clarity, and a strong sense of quality.
+            </p>
+          </div>
+          <div class="card">
+            <h3>What we stand for</h3>
+            <ul class="feature-list">
+              <li>Creativity grounded in strategy</li>
+              <li>Attention to detail and consistency</li>
+              <li>Timely delivery and dependable communication</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Le Roi Graphics & IT Solutions</h3>
+          <p>Making brands look professional, memorable, and ready to grow.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <a href="tel:0791150419" class="footer-contact">☎ 0791150419</a>
+          <a href="https://wa.me/256752002981" class="footer-contact" target="_blank">💬 0752002981</a>
+          <a href="mailto:chadrimartin3@gmail.com" class="footer-contact">✉ chadrimartin3@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

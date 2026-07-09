@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Roi Graphics & IT Solutions</title>
+    <meta
+      name="description"
+      content="Le Roi Graphics & IT Solutions delivers professional design, printing, branding, and IT support services from Kampala, Uganda."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">
+          <img src="fgtg.jpg" alt="Le Roi Graphics & IT Solutions logo" />
+          <span>
+            <strong>Le Roi</strong>
+            <small>Graphics & IT Solutions</small>
+          </span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="contact-bar">
+        <a href="tel:0791150419" class="contact-item" title="Call us">
+          <span class="contact-icon">☎</span>
+          <span class="contact-text">0791150419</span>
+        </a>
+        <a href="https://wa.me/256752002981" class="contact-item" title="WhatsApp us" target="_blank">
+          <span class="contact-icon">💬</span>
+          <span class="contact-text">0752002981</span>
+        </a>
+        <a href="mailto:chadrimartin3@gmail.com" class="contact-item" title="Email us">
+          <span class="contact-icon">✉</span>
+          <span class="contact-text">chadrimartin3@gmail.com</span>
+        </a>
+      </div>
+    </header>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const mainNav = document.getElementById('mainNav');
+      hamburger.addEventListener('click', () => {
+        mainNav.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+      document.querySelectorAll('.main-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          mainNav.classList.remove('active');
+          hamburger.classList.remove('active');
+        });
+      });
+    </script>
+
+    <main>
+      <section class="hero">
+        <div class="hero-background">
+          <img src="illustration-of-world-and-network-photo.jpg" alt="Global network technology background" />
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Professional Design • Printing • Branding</p>
+            <h1>Creating bold visuals that move brands forward.</h1>
+            <p class="hero-copy">
+              From striking brand identities to high-quality print materials and reliable IT support,
+              Le Roi delivers polished solutions for businesses in Kampala and beyond.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="services.html">Explore Services</a>
+              <a class="btn btn-secondary" href="contact.html">Request a Quote</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h3>Why businesses choose us</h3>
+            <ul>
+              <li>Creative design with clear brand strategy</li>
+              <li>Premium printing and finishing quality</li>
+              <li>Fast, dependable service in Kampala</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">What we do</p>
+            <h2>Solutions tailored for modern brands</h2>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Graphic Design</h3>
+              <p>Logos, flyers, brochures, business cards, posters, and digital creatives crafted with impact.</p>
+            </article>
+            <article class="card">
+              <h3>Printing Services</h3>
+              <p>High-quality offset and digital printing for events, marketing campaigns, and everyday business needs.</p>
+            </article>
+            <article class="card">
+              <h3>Branding</h3>
+              <p>Consistent brand systems that strengthen recognition, trust, and professional presence.</p>
+            </article>
+            <article class="card">
+              <h3>IT Services</h3>
+              <p>Reliable technology support, system maintenance, and IT infrastructure solutions for seamless business operations.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Client Success</p>
+            <h2>What our clients are saying</h2>
+          </div>
+          <div class="testimonials-grid">
+            <article class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Le Roi transformed our brand identity completely. Their attention to detail and creative excellence exceeded our expectations. Highly recommended!"</p>
+              <div class="testimonial-author">
+                <strong>Sarah Nakamatte</strong>
+                <span>Business Owner, Kampala</span>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"The printing quality is outstanding, and their turnaround time is impressive. Le Roi is now our trusted partner for all our marketing materials."</p>
+              <div class="testimonial-author">
+                <strong>James Musoke</strong>
+                <span>Marketing Director, Kampala</span>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Professional, reliable, and innovative. Le Roi's IT support has been invaluable to our operations. They truly understand our business needs."</p>
+              <div class="testimonial-author">
+                <strong>Grace Mwangi</strong>
+                <span>CEO, Tech Company Kampala</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container split-section">
+          <div>
+            <p class="eyebrow">About Le Roi</p>
+            <h2>Trusted by growing businesses across Uganda.</h2>
+            <p>
+              We combine creativity, precision, and strategic thinking to deliver materials and digital experiences that help organizations stand out.
+            </p>
+            <a class="btn btn-primary" href="about.html">Learn More</a>
+          </div>
+          <div class="quote-box">
+            <p>"Professional presentation is the first step to lasting customer confidence."</p>
+            <span>— Le Roi Graphics & IT Solutions</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Le Roi Graphics & IT Solutions</h3>
+          <p>Designing, printing, and branding solutions in Kampala, Uganda.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <a href="tel:0791150419" class="footer-contact">☎ 0791150419</a>
+          <a href="https://wa.me/256752002981" class="footer-contact" target="_blank">💬 0752002981</a>
+          <a href="mailto:chadrimartin3@gmail.com" class="footer-contact">✉ chadrimartin3@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
